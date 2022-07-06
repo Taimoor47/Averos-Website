@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Averos</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- ================== for trust slider ================== -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+    />
+    <!-- ======================End=========== -->
+
+    <style>
+      .dropdown:hover .dropdown-menu {
+        display: block;
+      }
+
+      .menu_area {
+        position: static;
+      }
+
+      .mega_area {
+        position: absolute;
+        width: 60%;
+        right: 18%;
+      }
+
+      .dropdown-menu {
+        margin: 0;
+      }
+
+      .custom_height {
+        height: 35rem;
+      }
+
+      #my_img {
+        filter: grayscale(100);
+        height: 80px;
+      }
+      #my_img:hover {
+        filter: grayscale(0);
+      }
+
+      @media screen and (max-width: 568px) {
+        #my_img {
+          filter: grayscale(0);
+        }
+      }
+
+      @media only screen and (min-width: 700px) and (max-width: 900px) {
+        .taimoor {
+          display: none;
+        }
+        .custom {
+          display: flex;
+          justify-content: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-4">
+      <div class="container-lg">
+        <a class="navbar-brand" href="#"
+          ><img src="./Images/averos_logo.png" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2">
+            <!-- <li class="nav-item  ">
+              <a class="nav-link active" aria-current="page" href="#">Technology</a>
+
+            </li> -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Technology
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown menu_area">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Solutions
+              </a>
+              <div
+                class="dropdown-menu mega_area"
+                aria-labelledby="navbarDropdown"
+              >
+                <!-- <div class="row"> -->
+                <div class="row justify-content-center">
+                  <div class="col-sm-6 col-lg-3 m-3">
+                    <h6>Integration Ready</h6>
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+
+                  <div class="col-sm-6 col-lg-3 m-3">
+                    <h6>Integration Ready</h6>
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+
+                  <div class="col-sm-6 col-lg-3 m-3">
+                    <h6>Integration Ready</h6>
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Partners
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Company
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"
+                >Support</a
+              >
+            </li>
+
+            <li class="nav-item border rounded border-primary">
+              <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"
+                >Contact Us</a
+              >
+            </li>
+            <li class="nav-item mx-2 dropdown border-0">
+              <a
+                href="#"
+                aria-current="page"
+                class="nav-link bi bi-search ps-5"
+                id="navbarDropdown-search"
+              ></a>
+
+              <ul
+                class="dropdown-menu bg-light"
+                aria-labelledby="navbarDropdown-search"
+              >
+                <form
+                  class="d-flex dropdown-item collapse border-dark border-3"
+                >
+                  <input
+                    class="rounded"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <button class="btn btn-outline-success">Search</button>
+                </form>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ========================================= Slider Section ======================================= -->
+
+    <section class="container-fluid">
+      <div
+        id="carouselExampleInterval"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2000">
+            <img
+              src="./Images/home-banner-navibees.png"
+              class="d-block custom_height w-100 img-responsive"
+              alt="..."
+            />
+
+            <div class="carousel-caption">
+              <div class="d-flex custom">
+                <div class="me-5">
+                  <h2 class="h-2">Wayfinder Kiosk</h2>
+                  <p class="lead">Lorem ipsum dolor sit amet consectetur.</p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <button class="btn btn-outline-light">Learn more</button>
+                </div>
+                <div class="taimoor ms-5">
+                  <img
+                    src="./Images/home-banner-navibees_app(1).png"
+                    class="img-responsive w-100 h-auto"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item" data-bs-interval="2000">
+            <img
+              src="./Images/VALS-bg.png"
+              class="d-block custom_height w-100"
+              alt="..."
+            />
+            <div class="carousel-caption">
+              <div class="d-flex custom">
+                <div class="my-auto">
+                  <h2 class="h-2">Wayfinder Kiosk</h2>
+                  <p class="lead">Lorem ipsum dolor sit amet consectetur.</p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <button class="btn btn-outline-light">Learn more</button>
+                </div>
+                <div class="taimoor">
+                  <img
+                    src="./Images/home-banner-kiosk-wayfinder-pic.png"
+                    class="img-responsive w-100 h-auto"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item" data-bs-interval="2000">
+            <img
+              src="./Images/home-banner-ALS-1.png"
+              class="d-block custom_height w-100"
+              alt="..."
+            />
+            <div class="carousel-caption">
+              <div class="d-flex custom">
+                <div class="my-auto">
+                  <h2 class="h-2">Wayfinder Kiosk</h2>
+                  <p class="lead">Lorem ipsum dolor sit amet consectetur.</p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <button class="btn btn-outline-light">Learn more</button>
+                </div>
+                <div class="taimoor ms-5">
+                  <img
+                    src="./Images/home-banner-ALS-pic(1).png"
+                    class="img-responsive w-100 h-auto"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item" data-bs-interval="2000">
+            <img
+              src="./Images/home-banner-kiosk-wayfinder-1.png"
+              class="d-block custom_height w-100"
+              alt="..."
+            />
+            <div class="carousel-caption">
+              <div class="d-flex custom">
+                <div class="my-auto me-5">
+                  <h2 class="h-2">Wayfinder Kiosk</h2>
+                  <p class="lead">Lorem ipsum dolor sit amet consectetur.</p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <button class="btn btn-outline-light">Learn more</button>
+                </div>
+                <div class="taimoor ms-5">
+                  <img
+                    src="./Images/VALS-pic.png"
+                    class="img-responsive w-100 h-auto"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- <!==================================-- 3rd section --=======================================> -->
+    <div class="container-fluid my-5">
+      <div class="row justify-content-center5">
+        <!-- for image  -->
+
+        <div class="col-lg-6 justify-content-start h-auto">
+          <img src="./images/home_banner.png" alt="" class="w-100 img-fluid" />
+        </div>
+        <!-- for text and button   -->
+        <div
+          class="col-lg-6 text-center align-middle my-auto justify-content-start mt-5"
+        >
+          <h1 class="display-4">What Averos Do?</h1>
+          <p class="text-muted h3">The Smarter Localization Systems</p>
+          <p class="lead">
+            Advanced and Innovative Tracking, Localization and Navigation
+            Systems for Smart Buildings, Healthcare and Industry.
+          </p>
+          <button class="btn btn-danger mx-2">More Info</button>
+          <button class="btn btn-outline-danger">Contact Us</button>
+        </div>
+      </div>
+    </div>
+    <!-- ======================================= Trusted Section =========================================== -->
+
+    <div class="container-fluid my-5">
+      <h1 class="text-center fw-bold h4 mb-5">Trusted By</h1>
+      <div class="row">
+        <div class="col-12 m-auto">
+          <div class="owl-carousel owl-theme">
+            <div class="item mb-4">
+              <div class="card border-0 shadow">
+                <img
+                  id="my_img"
+                  src="./images/t_logo_1.png"
+                  alt=""
+                  class="card-img-top"
+                />
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="card border-0 shadow">
+                <img
+                  id="my_img"
+                  src="./images/t_logo_2.jpg"
+                  alt=""
+                  class="card-img-top"
+                />
+              </div>
+            </div>
+            <div class="item">
+              <div class="card border-0 shadow">
+                <img
+                  id="my_img"
+                  src="./images/trusted_4.png"
+                  alt=""
+                  class="card-img-top"
+                />
+              </div>
+            </div>
+            <div class="item">
+              <div class="card border-0 shadow">
+                <img
+                  id="my_img"
+                  src="./images/trusted_6.png"
+                  alt=""
+                  class="card-img-top"
+                />
+              </div>
+            </div>
+            <div class="item">
+              <div class="card border-0 shadow">
+                <img
+                  id="my_img"
+                  src="./images/trusted_7.png"
+                  alt=""
+                  class="card-img-top"
+                />
+              </div>
+            </div>
+            <div class="item">
+              <div class="card border-0 shadow">
+                <img
+                  id="my_img"
+                  src="./images/trusted_8.jpg"
+                  alt=""
+                  class="card-img-top"
+                />
+              </div>
+            </div>
+            <div class="item">
+              <div id="my_img" class="card border-0 shadow">
+                <img src="./images/trusted_9.png" alt="" class="card-img-top" />
+              </div>
+            </div>
+            <div class="item">
+              <div class="card border-0 shadow">
+                <img
+                  id="my_img"
+                  src="./images/MOPA.png"
+                  alt=""
+                  class="card-img-top"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================================== Product Section ====================================== -->
+
+    <!-- for products  -->
+
+    <div class="container-lg">
+      <div class="row">
+        <div class="col pt-5">
+          <h1 class="text-uppercase">products</h1>
+        </div>
+      </div>
+      <div class="row justify-content-center pt-5">
+        <!-- col 1 -->
+        <div class="col-lg-4 text-center my-4 mx-2">
+          <img src="./images/softwares.png" alt="" class="my_img" />
+          <div>
+            <a
+              href="#"
+              class="fw-bold lead text-muted text-uppercase text-center text-decoration-none"
+              >softwares</a
+            >
+          </div>
+        </div>
+        <!-- col 2 -->
+        <div class="col-lg-4 text-center mx-2 my-4">
+          <img src="./images/scanners.png" alt="" class="my_img" />
+          <div>
+            <a
+              href="#"
+              class="lead text-muted text-uppercase text-center text-decoration-none fw-bold"
+              >Scanners & Getways</a
+            >
+          </div>
+        </div>
+        <!-- col3 -->
+        <div class="col-lg-3 text-center mx-2 my-4">
+          <img src="./images/beacons (1).png" alt="" class="my_img" />
+          <div>
+            <a
+              href="#"
+              class="lead text-muted text-uppercase text-center ms-5 text-decoration-none fw-bold"
+              >Becone</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- product the end  -->
+
+    <!-- ============================================ Why Averos SEction =============================== -->
+
+    <!-- why choose averos section  -->
+    <div class="container-lg border-bottom border-2">
+      <div class="row">
+        <div class="col border-bottom border-2">
+          <h1 class="display-5 fw-bold text-center my-3">Why Choose Averos</h1>
+        </div>
+      </div>
+      <div class="row justify-content-center mt-3">
+        <div class="col-lg-4 my-3">
+          <h1 class="h5">Location+Navigation</h1>
+          <p class="lead text-muted">
+            Broad capabilities for location tracking, motion tracking or
+            proximity-based applications. Use technologies based on BLE, UWB,
+            GPS for the most optimal solutions.
+          </p>
+        </div>
+
+        <div class="col-lg-4 my-3">
+          <h1 class="h5">Own Hardware</h1>
+          <p class="lead text-muted">
+            Several models of RTLS Scanners and BLE beacons, which are designed
+            and developed by AVEROS.
+          </p>
+        </div>
+
+        <div class="col-lg-4 my-3">
+          <h1 class="h5">Complete Demo Kits</h1>
+          <p class="lead text-muted">
+            Launch pilot projects from day #1 using the demo kits or custom
+            configurations. Reduce time, expenses and risks. It enhances safety
+            and security.
+          </p>
+        </div>
+
+        <div class="col-lg-4">
+          <h1 class="h5">Software Features</h1>
+          <p class="lead text-muted">
+            We provide cost effective end-to-end solutions & integration ready
+            SDKs to cater healthcare, supermarket & malls, airports, industries,
+            logistics & warehouses, smart buildings & others.
+          </p>
+        </div>
+
+        <div class="col-lg-4">
+          <h1 class="h5">Integration with 3rd Party</h1>
+          <p class="lead text-muted text-center">
+            Well documented APIs and SDKs that allow easy integration with any
+            3rd party IP camera & access control.
+          </p>
+        </div>
+
+        <div class="col-lg-4">
+          <h1 class="h5">3rd-party Hardware Support</h1>
+          <p class="lead text-muted text-center">
+            You can use your existing BLE beacons or RTLS tags with our ALS
+            (AVEROS Location Sphere) software..
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======================================== Application Section ===================================== -->
+
+    <!-- application areas -->
+
+    <div class="container-lg mt-4">
+      <h1 class="text-uppercase h1">application areas</h1>
+    </div>
+    <div class="container-lg my-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-3 col-md-5 text-center mx-4 my-3">
+          <img src="./images/smart-building.png" alt="" class="my_area w-100" />
+          <div class="my-2">
+            <a
+              href="#"
+              class="text-decoration-none text-muted fw-bold h5 text-uppercase"
+            >
+              Smart Buildings</a
+            >
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-5 text-center mx-4 my-3">
+          <img src="./images/Healthcare-1.png" alt="" class="my_area w-100" />
+          <div class="my-2">
+            <a
+              href="#"
+              class="text-decoration-none text-muted fw-bold h5 text-uppercase"
+            >
+              Health Care</a
+            >
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-5 text-center mx-4 my-3">
+          <img src="./images/industry.png" alt="" class="my_area w-100" />
+          <div class="my-2">
+            <a
+              href="#"
+              class="text-decoration-none text-muted fw-bold h5 text-uppercase"
+            >
+              industries</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======================================== Footer Section ========================================= -->
+
+    <footer class="footer_main">
+      <div class="footer_area">
+        <div class="container custom_con">
+          <div class="row custom_row">
+            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+              <div class="mx-2">
+                <li class="List_style">
+                  <h5 class="mb-4">Company</h5>
+                  <ul class="list-unstyled ul_custom">
+                    <li><a href=" ">gsdg</a></li>
+                    <li><a href="">News & Events</a></li>
+                    <li><a href="">Career</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Support</a></li>
+                  </ul>
+                </li>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+              <div class="mx-2">
+                <li class="List_style">
+                  <h5 class="mb-4">Solutions</h5>
+                  <ul class="list-unstyled text-muted ul_custom">
+                    <li><a href="">IPS – SDK</a></li>
+                    <li><a href="">NaviBees – SDK</a></li>
+                    <li><a href="">ALS</a></li>
+                    <li><a href="">VALS</a></li>
+                    <li><a href="">Wayfinder</a></li>
+                  </ul>
+                </li>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+              <div class="">
+                <li class="List_style">
+                  <h5 class="mb-4">Technology</h5>
+                  <ul class="list-unstyled ul_custom">
+                    <li><a href="">About</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">About</a></li>
+                  </ul>
+                </li>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+              <div class="">
+                <li class="List_style">
+                  <h5 class="mb-4">Partners</h5>
+                  <ul class="list-unstyled ul_custom">
+                    <li><a href="">About</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">About</a></li>
+                  </ul>
+                </li>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+              <div class="">
+                <li class="List_style">
+                  <h5 class="mb-4">Legal Documents</h5>
+                  <ul class="list-unstyled text-muted ul_custom">
+                    <li>
+                      <a href="https://www.google.com/">Privacy Policy</a>
+                    </li>
+                    <li><a href="">About</a></li>
+                  </ul>
+                </li>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+              <div class="">
+                <img
+                  src="https://averos.com/wp-content/themes/averos/img/averos_overview.png"
+                  style="width: 210px; height: 200px"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- =============================== Footer Bottom Section ======================================= -->
+      <footer class="footer_down">
+        <div class="container py-3">
+          <div class="row pt-2.5 d-flex flex-wrap">
+            <div class="col-sm-6">
+              <p>
+                © Copyright 2022, Modon Altaqnia LLC (AVEROS). All rights
+                reserved.
+              </p>
+            </div>
+            <div class="col-md-6">
+              <div class="text-light">
+                <a href="" class="m-4"><i class="bi bi-facebook"></i></a>
+                <a href="" class="m-4"><i class="bi bi-twitter"></i></a>
+                <a href="" class="m-4"><i class="bi bi-linkedin"></i></a>
+                <a href="" class="m-4"><i class="bi bi-youtube"></i></a>
+                <h4 style="float: right">Follow Us</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </footer>
+
+    <!-- ======== jquery link ======== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- ============= Bootstrap js ================ -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- ============== for function ====== -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 15,
+        nav: false,
+        autoplay: 300,
+        autoplay: true,
+        autoplayTimeout: 1500,
+        autoplayHoverPause: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          400: {
+            items: 2,
+          },
+          600: {
+            items: 3,
+          },
+
+          1000: {
+            items: 7,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

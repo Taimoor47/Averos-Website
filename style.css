@@ -1,0 +1,135 @@
+/* .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.menu_area{
+  position:static;
+}
+
+.mega_area{
+  position:absolute;
+  width: 60%;
+  right: 18%;
+  
+  
+}
+
+.dropdown-menu {
+  margin: 0;
+} */
+
+.custom_height {
+  height: 35rem;
+}
+
+.List_style {
+  list-style-type: none !important;
+}
+
+.custom_con {
+  max-width: 57rem;
+  width: 100%;
+}
+
+.footer_main {
+  background-color: #f4f6f9;
+}
+
+.footer_area {
+  padding: 3.7rem 0 3.7rem 0;
+  border-bottom: 1px solid #e9ecf3;
+}
+
+.custom_row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ul_custom {
+  display: block;
+
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+.ul_custom li{
+  margin-bottom: 0.9em;
+  margin-left: 0.5rem;
+  
+
+}
+
+.ul_custom li a{
+  text-decoration: none;
+  font-weight: lighter;
+  color: rgb(0, 0, 0);
+}
+
+.footer_down{
+  background-color: #514875;
+}
+
+.footer_down .container .row .col-sm-6 p{
+  color: #f4f6f9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media  (max-width: 768px){
+  .ul_custom{
+    background-color: #fff;
+  }
+    }
+
+@media only screen and (min-width: 700px) and (max-width: 900px) {
+  .taimoor {
+    display: none;
+  }
+  .custom {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* ========================================================================================= */
+/* for slider  */
+.Taimoor_height {
+  /* width: 100vw !important; */
+  height: 40rem !important;
+}
+
+/* product section  */
+.my_img {
+  transition: transform 0.8s;
+  /* Animation */
+}
+
+.my_img:hover {
+  transform: scale(1.1);
+}
+
+/* for my area  */
+.my_area:hover {
+  border: 1px solid black;
+}
+
+/* trusted by  */
+.colorless {
+  filter: grayscale(100);
+}
+.colorless:hover {
+  filter: grayscale(0);
+}
